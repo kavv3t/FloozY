@@ -35,6 +35,7 @@ body {
 header {
     position: fixed;
     width: 30%;
+    background-color: #91b7ba;
 }
 
 nav {
