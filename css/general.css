@@ -9,7 +9,7 @@ body {
     
 }
 
-.background {
+/* .background {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,4 +30,15 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+} */
+
+header {
+    width: 25%;
+    background-color: #91b7ba ;
+    height: 100vh;
+}
+
+header > img {
+    width: 100%;
+    background-color: ;
 }
