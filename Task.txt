@@ -1,1 +1,4 @@
 # Répartition des tâches
+Mathis : nav et footer
+Liam : Main structure principale
+       
