@@ -54,6 +54,11 @@ main {
     box-sizing: border-box;
 }
 
+
+.animation {
+    position: relative;
+}
+
 .texte {
     width: 50%;
     height: 60%;
