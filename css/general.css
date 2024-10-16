@@ -4,12 +4,15 @@
 }
 
 header {
-    height: 10vh;
+    position: fixed;
+    background-color: white;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 3rem 2rem 0rem 2rem;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 header > a {
@@ -38,60 +41,143 @@ nav > ul > li > a {
     font-style: normal;
 }
 
-body {
-    width: 100%;
-    height: 5000px;
-}
+
+  
 main {
+    scroll-behavior: smooth;
+}
+
+.scroll {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+    height: 100vh;
+}
+  
+.container {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    padding: 2rem 5rem 2rem 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-sizing: border-box;
+    border-bottom: solid 5px black;
+    gap: 2rem;
 }
 
-.texte {
-    width: 50%;
+.containerTexte {
+    width: 40%;
+    height: 100%;
+}
+
+.container > section {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texte1 {
+    width: 100%;
     height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.texte > h1 {
+.texte1 > h1 {
     font-size: 3rem;
     font-family: "Kanit", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.texte > p {
+.texte1 > p {
     font-size: 1.5rem;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.image_container {
-   width: 40%;
-   height:100%; 
-   overflow: hidden;
-   border-radius: 50px;
+.container, .animation {
+    height: 100vh; 
+    scroll-snap-align: start;
 }
 
-.image_container > img {
- width: 500px;
+.animation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0rem 4rem 4rem 4rem;
+    box-sizing: border-box;
+}
+
+.texte2 {
+    width: 100%;
+    height: 400px;
+    transform: translateX(-100%); 
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 4rem;
+    box-sizing: border-box;
+    opacity: 0;
+} 
+
+
+.texte2 > h1 {
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.texte2 > p {
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.image_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    gap: 4rem;
+}
+
+.image_container > section {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.image_container > section > img {
+ width: 100%;
  height: 100%;
- position: relative;
+ max-height: 100%;
  transition: 0.3s ease;
 }
 
-.image_container > img:hover{
-    
+.image_container > section > img:hover{
     transition: 0.3s ease;
     transform: scale(1.5);
 }
