@@ -1,4 +1,4 @@
 # Répartition des tâches
-Mathis : nav et footer
-Liam : Main structure principale
+Mathis : Accueil et Contact
+Liam : Service et Musée
        
