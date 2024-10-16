@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+  background-color: rgb(189, 241, 211);
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem 0rem 2rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+header > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+nav {
+  width: 50%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 30% 70%;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  zoom: 1.5;
+}
+
+.haut {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+}
+
+h1,
+h2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(51, 160, 100);
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(9, 131, 64);
+}
+
+.bas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.bas > section {
+  background-color: white;
+  height: 400px;
+  width: 230px;
+  border-radius: 20px;
+}
+
+.bas > section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.subIm1 {
+  margin-top: 30px;
+  background: url("../images/prices.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.subIm2 {
+  margin-top: 30px;
+  background: url("../images/rules.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.subIm3 {
+  margin-top: 30px;
+  background: url("../images/tasklist.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
+.subSec1,
+.subSec2,
+.subSec3 {
+  
+}
+
+.subSec > h3 {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  color: rgb(9, 131, 64);
+}
+
+.subSec > div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*
+  Ancien design (pas bon)
+  
+  main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+  padding: 30px;
+  margin: 30px;
+  background-color: rgba(200, 81, 255, 0.781);
+  border-radius: 20px;
+  height: 130vh;
+}
+
+main > section {
+  height: 900px;
+}
+
+.colonne1 {
+  border-radius: 15px;
+  background-color: white;
+  border: solid 1px black;
+  height: 130vh;
+}
+
+.colonne2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2vw;
+  height: 130vh;
+}
+
+.inColonne1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2vw;
+}
+
+.inColonne2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+}
+
+.inColonne1 > section {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.inColonne2 > section {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.inIt1 {
+  border: solid 1px black;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.imCont1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.art1 {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  align-items: center;
+  background-color: rgba(255, 204, 127, 0.411);
+  width: 50vw;
+  margin: 20px;
+  border-radius: 10px;
+  height: 30vh;
+}
+
+.arText1 > h3 {
+  font-size: 1.5vw;
+}
+
+.arText1 > p {
+  padding-left: 20px;
+  font-size: 15px;
+  width: 20vw;
+  font-size: 1.2vw;
+}
+
+.im1 {
+  width: 20vh;
+  padding-left: 20px;
+  display: grid;
+}
+
+@media (min-width: 1700px) {
+  main {
+    width: 1200px;
+  }
+
+  .inColonne1,
+  .inColonne2 {
+    width: 500px;
+  }
+
+  .art1 {
+    width: auto;
+  }
+}*/
