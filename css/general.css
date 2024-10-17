@@ -145,7 +145,7 @@ nav > ul > li > a {
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    padding: 4rem;
+    padding: 4rem 10rem 4rem 10rem;
     box-sizing: border-box;
     opacity: 0;
 } 
