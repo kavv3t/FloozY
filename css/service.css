@@ -140,6 +140,17 @@ h2 {
   width: 80%;
 }
 
+.scrollButton {
+  background-color: rgb(115, 83, 255);
+  color: white;
+  border: none;
+  width: auto;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 5px 60px;
+  border-radius: 10px;
+}
+
 .border {
   border-top: solid 2px black;
   width: 80%;
@@ -176,8 +187,20 @@ h2 {
   height: 40vw;
 }
 
+.bas1 > section > div {
+
+}
+
 .bas1 > section > div > p {
-  width: 400px;
+  position: relative;
+  right: 30px;
+  width: 20vw;
+  font-size: 1.1vw;
+}
+
+h4 {
+  font-size: 2rem;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 1350px) {
