@@ -60,14 +60,10 @@ nav > ul > li > a {
     gap: 2rem;
 }
 
-.container::after {
-    content: '';
-    position: absolute;
-    bottom: 0; /* Place la bordure en bas du conteneur */
-    left: 50%; /* Positionne le bord du pseudo-élément au milieu du conteneur */
-    transform: translateX(-50%); /* Centre le pseudo-élément horizontalement */
-    width: 80%; /* Définit la largeur à 80% de celle du conteneur */
-    border-bottom: 5px solid black; /* Applique la bordure */
+.border {
+    border-top: solid 2px black;
+    width: 80%;
+    position: relative;
 }
 
 .containerTexte {
