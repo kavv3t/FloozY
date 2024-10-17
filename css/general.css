@@ -56,7 +56,6 @@ nav > ul > li > a {
     padding-left: 2rem;
     padding-right: 2rem;
     box-sizing: border-box;
-    position: relative; /* Nécessaire pour positionner le pseudo-élément par rapport à la .container */
     gap: 2rem;
 }
 
@@ -64,6 +63,7 @@ nav > ul > li > a {
     border-top: solid 2px black;
     width: 80%;
     position: relative;
+    margin: auto;
 }
 
 .containerTexte {
