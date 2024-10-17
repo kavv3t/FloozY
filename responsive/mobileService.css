@@ -1,0 +1,49 @@
+.mid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inMain {
+  height: 150vh;
+}
+
+.mid > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 50%;
+  height: 350px;
+}
+
+.subIm1,
+.subIm2,
+.subIm3 {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+}
+
+.scrollButton {
+  background-color: rgb(115, 83, 255);
+  color: white;
+  border: none;
+  width: auto;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 5px 60px;
+  border-radius: 10px;
+}
+
+.subSec {
+  position: relative;
+  bottom: 30px;
+}
+
+.deux {
+  padding: 5px 40px;
+}
+
+.trois {
+  padding: 5px 50px;
+}
