@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
     const texte = document.querySelector(".texte2");
     const mainAnimation = document.querySelector(".animation");
 
@@ -23,4 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Écoute l'événement de défilement
     window.addEventListener("scroll", handleScroll);
-});
+
