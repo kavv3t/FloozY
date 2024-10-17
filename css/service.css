@@ -11,13 +11,15 @@ body {
 }
 
 header {
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem 2rem 0rem 2rem;
-  box-sizing: border-box;
-  background-color: white;
+    position: fixed;
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 0rem 2rem;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 header > a {
