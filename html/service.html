@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
   <title>Services</title>
   <link rel="stylesheet" href="../css/service.css">
+  <script src="../js/scrollToView.js"></script>
 </head>
 <body>
   <header>
@@ -33,11 +34,11 @@
             
           </section>
           <section class="subSec">
-            <h3>Valeur Des Prix</h3>
+            <h3>Marge Des Prix</h3>
             <div>
               <p class="textIn1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat suscipit ipsa quisquam.</p>
             </div>
-            <button class="scrollButton">Prix</button>
+            <button class="scrollButton" onclick="scrollToSection('scroll1')">Prix</button>
           </section>
         </section>
         <section>
@@ -45,11 +46,11 @@
   
           </section>
           <section class="subSec">
-            <h3>Sûreté Des Contrats</h3>
+            <h3>Les Différents Plans</h3>
             <div>
               <p class="textIn2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat suscipit ipsa quisquam.</p>
             </div>
-            <button class="scrollButton">Contrats</button>
+            <button class="scrollButton" onclick="scrollToSection('scroll2')">Contrats</button>
           </section>
         </section>
         <section>
@@ -57,28 +58,44 @@
   
           </section>
           <section class="subSec">
-            <h3>Nos Engagements</h3>
+            <h3>Nos Valeurs</h3>
             <div>
               <p class="textIn3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat suscipit ipsa quisquam.</p>
             </div>
-            <button class="scrollButton">Engagements</button>
+            <button class="scrollButton" onclick="scrollToSection('scroll3')">Valeurs</button>
           </section>
         </section>
       </section>
     </section>
-    <div class="border"></div>
+    <div class="border" id="scroll1"></div>
     <section class="bas">
-      <section class="bas1">
+      <section class="bas1" id="scroll2">
         <div class="img1"></div>
         <section>
-          <h4>Les prix</h4>
+          <h4>Les Prix</h4>
           <div>
             <p class="basText1">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat perferendis cupiditate eveniet facilis saepe soluta? Voluptatum dolor cumque unde expedita laudantium quisquam aliquid, dicta est? Veritatis repellendus voluptatem ea?</p>
           </div>
         </section>
       </section>
-      <section>test</section>
-      <section>test</section>
+      <section class="bas1 second" id="scroll3">
+        <section>
+          <h4>Différents Plans</h4>
+          <div>
+            <p class="basText1 second3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat perferendis cupiditate eveniet facilis saepe soluta? Voluptatum dolor cumque unde expedita laudantium quisquam aliquid, dicta est? Veritatis repellendus voluptatem ea?</p>
+          </div>
+        </section>
+        <div class="img1 second2"></div>
+      </section>
+      <section class="bas1 third">
+        <div class="img1 third2"></div>
+        <section>
+          <h4>Nos valeurs</h4>
+          <div>
+            <p class="basText1 third3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat perferendis cupiditate eveniet facilis saepe soluta? Voluptatum dolor cumque unde expedita laudantium quisquam aliquid, dicta est? Veritatis repellendus voluptatem ea?</p>
+          </div>
+        </section>
+      </section>
     </section>
   </main>
   <footer>test</footer>
