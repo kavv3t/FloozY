@@ -54,10 +54,19 @@ nav > ul > li > a {
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
   background-color: white;
+  padding-top: 100px;
+}
+
+.inMain {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .haut {
@@ -69,21 +78,21 @@ main {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   color: black;
 }
 
-.bas {
+.mid {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  
+  padding-top: 100px;
 }
 
-.bas > section {
+.mid > section {
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 500px;
@@ -106,10 +115,16 @@ h2 {
 }
 
 .subIm3 {
-  background: url("../images/tasklist.jpg");
+  background: url("../images/tasklisting.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
+}
+
+.subSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subSec > h3 {
@@ -123,6 +138,60 @@ h2 {
   margin-top: 20px;
   text-align: center;
   width: 80%;
+}
+
+.border {
+  border-top: solid 2px black;
+  width: 80%;
+  position: relative;
+  padding-bottom: 5vh;
+  bottom: 15vh;
+}
+
+.bas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.bas1 {
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+  width: 40%;
+  align-items: center;
+  border:solid 2px rgb(115, 83, 255); 
+  border-radius: 15px;
+  box-shadow: 0px -20px rgb(115, 83, 255);
+}
+
+.img1 {
+  background: url("../images/value.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  width: 300px;
+  height: 40vw;
+}
+
+.bas1 > section > div > p {
+  width: 400px;
+}
+
+@media screen and (min-width: 1350px) {
+  .subIm1 {
+    background-size: 200px;
+  }
+
+  .subIm2 {
+    background-size: 250px;
+  }
+
+  .subIm3 {
+    background-size: 300px;
+  }
 }
 
 /*
