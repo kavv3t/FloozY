@@ -6,6 +6,10 @@
   font-family: "Afacad Flux", sans-serif;
 }
 
+span {
+  color: rgb(115, 83, 255);;
+}
+
 header {
     position: fixed;
     background-color: white;
@@ -20,12 +24,11 @@ header {
     border-bottom: solid 3px black;
 }
 
-header > a {
-  text-decoration: none;
-  color: black;
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.logo {
+  zoom: 3;
+  position: relative;
+  top: 3px;
+  left: 3px;
 }
 
 .logo {
