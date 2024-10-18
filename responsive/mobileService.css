@@ -2,6 +2,10 @@ h2 {
   padding-top: 80px;
 }
 
+main {
+  padding-top: 100px;
+}
+
 .mid {
   display: flex;
   flex-direction: column;
