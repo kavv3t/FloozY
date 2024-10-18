@@ -159,7 +159,7 @@ h2 {
   width: 80%;
   position: relative;
   padding-bottom: 5vh;
-  bottom: 15vh;
+  bottom: 5vh;
 }
 
 .bas {
@@ -212,7 +212,7 @@ h4 {
 
 .second > section > h4 {
   display: flex;
-  justify-content: end;  
+  justify-content: end;
 }
 
 .second2 {
