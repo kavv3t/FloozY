@@ -33,12 +33,11 @@
     justify-content: space-around;  
     align-items: center;
     overflow: hidden;
-    padding-top: 5rem;
+    padding-top: 10rem;
     border-radius: 50px;
  }
  
 .image_container > section > img {
-    width: 50vh;
     height: 100%;
     object-fit: cover;
 }
