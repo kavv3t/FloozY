@@ -29,3 +29,9 @@ main {
   width: 35vw;
   font-size: 3vw;
 }
+
+.second > section > div > p {
+  right: 0px;
+  left: 20px;
+  text-align: end;
+}
