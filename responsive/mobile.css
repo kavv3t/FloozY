@@ -57,6 +57,8 @@
     height: 50px;
     right: 0.5rem;
     top: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .nav-links {
