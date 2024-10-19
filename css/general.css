@@ -48,7 +48,7 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    /* border-bottom: solid 2px #7353ff; */
+    border-bottom: solid 2px #7353ff;
     color: #7353ff;
 }
 
