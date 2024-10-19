@@ -281,6 +281,31 @@ footer > ul > li {
   font-style: normal;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+  .bas1 {
+    width: 50%;
+  }
+
+  .bas1 > section > div > p {
+    position: relative;
+    right: 30px;
+    width: 25vw;
+    font-size: 1.5vw;
+  }
+
+  .second > section > div > p {
+    left: 10px;
+  }
+
+  .border {
+    border-top: solid 2px black;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    top: 3vh;
+    height: 10vh;
+  }  
+}
 
 /*
   Ancien design (pas bon)
