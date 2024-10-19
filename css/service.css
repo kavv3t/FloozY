@@ -24,6 +24,10 @@ header {
     border-bottom: solid 3px black;
 }
 
+.menu_hamburger {
+  display: none;
+}
+
 .logo {
   zoom: 3;
   position: relative;
