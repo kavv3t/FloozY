@@ -30,7 +30,7 @@
 
 
 .image_container {
-    width: 100%;
+    width: 90%;
     height: 100vh;
     display: flex;
     flex-direction: column; 
@@ -40,7 +40,6 @@
  
 .image_container > section > img {
     object-fit: cover;
-    
 }
 
 .image_container > section{
@@ -99,5 +98,14 @@
 }
 
 .texte2 {
-    margin-top: 2rem;
+    padding: 1rem;
 }
+
+.texte2 > p{
+    font-size: 1rem;
+}
+
+.texte2 > h1{
+    font-size: 2rem;
+}
+
