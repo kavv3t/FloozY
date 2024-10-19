@@ -35,19 +35,19 @@
 
 .image_container {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column; 
     overflow: hidden;
  }
  
 .image_container > section > img {
-    width: 50vh;
-    height: 100%;
     object-fit: cover;
 }
 
 .image_container > section{
     width: 50vh;
-    height: 100%;
+    height: 100vh;
     border-radius: 50px;
 }
+
