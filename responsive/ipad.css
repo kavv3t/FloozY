@@ -19,11 +19,6 @@
     gap: 2rem;
 }
 
-.border {
-    display: none;
-}
-
-
 
 .image_container {
     width: 100%;
@@ -38,6 +33,11 @@
  }
  
 .image_container > section > img {
+    width: 50vh;
     height: 100%;
     object-fit: cover;
+}
+
+.texte2 {
+    margin-top: 2rem;
 }
