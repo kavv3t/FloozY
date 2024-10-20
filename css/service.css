@@ -194,20 +194,20 @@ h2 {
 }
 
 .first {
+  opacity: 0;
   transform: translateX(-100%);
-  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
 .second {
+  opacity: 0;
   transform: translateX(100%);
-  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
 .third {
+  opacity: 0;
   transform: translateX(-100%);
-  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
