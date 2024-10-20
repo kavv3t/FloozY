@@ -290,6 +290,7 @@ nav > ul > li > a:hover {
     font-style: normal;
     padding: 4rem;
     box-sizing: border-box;
+    border-radius: 50px;
 }
 
 .sectionImage .text {
