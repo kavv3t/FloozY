@@ -105,7 +105,7 @@ main {
 }
 
 .bas {
-  height: 100vh;
+  height: 110vh;
 }
 
 .bas1 {
@@ -167,6 +167,11 @@ h4 {
     height: 250px;
     background-size: contain;
   }
+
+  .bas {
+    height: 120vh;
+  }
+
   .bas1 > section > div > p {
     font-size: 22px;
     width: 48vw;
@@ -257,12 +262,18 @@ h4 {
     bottom: 10vh;
   }
 
+  .contact {
+    position: relative;
+    bottom: 40px;
+    font-size: 6vw;
+  }
+
   .border2 {
     bottom: 5vh;
   }
   
   .bas {
-    height: 120vw;
+    height: 160vw;
   }
   
   .bas1 {
