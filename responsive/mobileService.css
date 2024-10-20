@@ -105,7 +105,7 @@ main {
 }
 
 .bas {
-  height: 110vh;
+  height: 130vh;
 }
 
 .bas1 {
@@ -163,11 +163,129 @@ h4 {
   }
 
   .bas {
-    height: 120vh;
+    height: 140vh;
   }
 
   .bas1 > section > div > p {
     font-size: 22px;
     width: 48vw;
   }
+}
+
+@media screen and (max-width: 620px) and (min-width: 551px) {
+  .bas {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 481px) {
+  .bas {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu_hamburger {
+    display: block;
+    z-index: 2;
+    margin-left: auto;
+    width: 10%;
+    width: 50px;
+    height: 50px;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+  
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(39, 38, 38, 0.656);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -100vw;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .mobile-menu {
+    margin-left: 0;
+  }
+  
+  .nav-links > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 0%;
+  }
+  
+  .nav-links > ul > li > a {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding-top: 40px;
+  }
+  
+  .haut {
+    zoom: 0.8;
+  }
+  
+  .mid {
+    zoom: 0.8;
+  }
+  
+  .mid > section {
+    height: 400px;
+    width: 90%;
+  }
+  
+  .border {
+    padding-bottom: 5vh;
+    bottom: 10vh;
+  }
+
+  .contact {
+    position: relative;
+    bottom: 40px;
+    font-size: 6vw;
+  }
+
+  .border2 {
+    bottom: 5vh;
+  }
+  
+  .bas {
+    height: 180vw;
+  }
+  
+  .bas1 {
+    width: 90%;
+    height: 100%;
+  }
+  
+  .bas1 > section > div > p {
+    position: relative;
+    right: 10px;
+    width: 40vw;
+    font-size: 3.1vw;
+  }
+  
+  .second > section > div > p {
+    right: 0px;
+    left: 30px;
+    text-align: end;
+  }
+  
 }
