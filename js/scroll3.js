@@ -21,9 +21,7 @@ function scroll(balise) {
           balisage.style.opacity = 1; // Augmente l'opacité
           // Marquer que l'animation s'est déroulée
           hasAnimated = true;
-      } 
-        
-      
+      }   
   };
   
   window.addEventListener("scroll", handleScroll);
