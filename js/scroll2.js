@@ -6,6 +6,8 @@ window.addEventListener('scroll', function() {
 
         if (sectionTop < triggerPoint) {
             section.classList.add('active');
+        }else {
+            section.classList.remove('active');
         }
     });
 });
