@@ -195,19 +195,19 @@ h2 {
 
 .first {
   transform: translateX(-100%);
-  opacity: 0;
+  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
 .second {
   transform: translateX(100%);
-  opacity: 0;
+  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
 .third {
   transform: translateX(-100%);
-  opacity: 0;
+  display: none;
   transition: transform 1s ease, opacity 1s ease;
 }
 
