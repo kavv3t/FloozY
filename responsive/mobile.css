@@ -127,5 +127,15 @@
     position: relative;
 }
 
+.scrollButton {
+    background-color: rgb(115, 83, 255);
+    color: white;
+    border: none;
+    width: auto;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 5px 60px;
+    border-radius: 10px;
+}
 
 
