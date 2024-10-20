@@ -267,7 +267,7 @@ h4 {
   }
   
   .bas {
-    height: 180vw;
+    height: 260vw;
   }
   
   .bas1 {
@@ -287,4 +287,8 @@ h4 {
     left: 30px;
     text-align: end;
   } 
+
+  footer {
+    padding: 0px;
+  }
 }
