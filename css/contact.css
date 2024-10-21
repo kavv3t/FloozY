@@ -53,31 +53,179 @@ nav > ul > li > a:hover {
     display: none;
 }
 
-.contact {
+
+main {
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    width: 60%;
+    height: 100vh;
+    box-sizing: border-box; 
+    padding: 10rem;
+    margin-top: 15vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    margin-left: auto;
 }
+
+.aside {
+    padding-top: 10rem;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7353ff;
+    gap: 6rem;
+    text-align: center;
+    position: fixed;
+}
+
+.titre {
+    text-align: center;
+}
+
+.titre > h1 {
+    font-size: 3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.titre > h2 {
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.aside > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.aside > ul > li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.aside > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.aside > img {
+    width: 15rem;
+    height: 15rem;
+}
+
 
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Kanit", sans-serif;
 }
 
-.scrollButton {
-    background-color: rgb(115, 83, 255);
-    color: white;
-    border: none;
-    width: auto;
-    font-size: 30px;
-    margin-top: 30px;
-    padding: 5px 60px;
-    border-radius: 10px;
+form p.underline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    color: #333;
 }
+
+form p.underline::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #007BFF;
+    margin: 0.5rem auto;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button.scrollButton.deux {
+    background-color: rgb(115, 83, 255);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+button.scrollButton.deux:hover {
+    background-color: #0056b3;
+}
+
+button.scrollButton.deux:active {
+    transform: scale(0.98);
+}
+
+.my-20 {
+    margin-top: 1rem;
+}
+
 
 footer {
     width: 100%;
