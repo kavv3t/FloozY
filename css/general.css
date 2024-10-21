@@ -252,10 +252,6 @@ nav > ul > li > a:hover {
     transition: transform 1s ease, opacity 1s ease;
 }
 
-.active {
-    transform: translateY(0); 
-    opacity: 1;
-}
 
 .sectionImage {
     position: relative;
