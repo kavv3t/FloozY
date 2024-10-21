@@ -1,4 +1,4 @@
-scroll(".first");
+/*scroll(".first");
 scroll(".second");
 scroll(".third");
 
@@ -35,4 +35,4 @@ function scroll(balise) {
   
   window.addEventListener("scroll", handleScroll);
   
-}
+}*/
