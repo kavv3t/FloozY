@@ -31,8 +31,6 @@
 
 
 .image_container {
-    width: 90%;
-    height: 100vh;
     display: flex;
     flex-direction: column; 
     overflow: hidden;
@@ -41,6 +39,8 @@
  
 .image_container > section > img {
     object-fit: cover;
+    width: 80vw;
+    height: 60vh;
 }
 
 
@@ -137,5 +137,19 @@
     padding: 5px 60px;
     border-radius: 10px;
 }
+
+.sectionImage .text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 1;
+    transition: none;
+}
+
+
+.sectionImage .overlay {
+    opacity: 1;
+}
+
 
 
