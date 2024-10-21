@@ -53,9 +53,21 @@ color: #7353ff;
 main {
   padding-top: 200px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+  align-content: space-between;
+  justify-content: center;
+  gap: 15px;
 }
 
 main > section {
+  width: 300px;
+  border: solid 2px black;
+  height: 200px;
+}
 
+@media screen and (max-width: 1500px) {
+  main {
+    flex-wrap: wrap;
+  }
 }
