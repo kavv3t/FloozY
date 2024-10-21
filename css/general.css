@@ -124,7 +124,29 @@ nav > ul > li > a:hover {
     margin-top: 30px;
     padding: 5px 60px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.scrollButtondeux {
+    background-color: rgb(115, 83, 255);
+    color: white;
+    border: none;
+    width: auto;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scrollButtondeux > a{
+    background-color: rgb(115, 83, 255);
+    color: white;
+    text-decoration: none;
+}
+
+
+
   
 .container, .animation {
     height: 100vh; 
@@ -310,6 +332,7 @@ nav > ul > li > a:hover {
     color: white;
     font-size: 1.5rem;
 }
+
 
 
 footer {
