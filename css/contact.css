@@ -161,7 +161,7 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: "Kanit", sans-serif;
     box-sizing: border-box;
-    margin-top: 20%;
+    margin:20%;
 }
 
 form p.underline {
@@ -211,11 +211,6 @@ textarea:focus {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
-textarea {
-    height: 150px;
-    resize: none;
-}
-
 button.scrollButton.deux {
     background-color: rgb(115, 83, 255);
     color: #fff;
@@ -234,10 +229,6 @@ button.scrollButton.deux:hover {
 
 button.scrollButton.deux:active {
     transform: scale(0.98);
-}
-
-.my-20 {
-    margin-top: 1rem;
 }
 
 .item {
