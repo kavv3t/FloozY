@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const section = document.querySelector('.container > section');
+  const section = document.querySelector('.cont');
   
   if (section) {
     section.addEventListener('click', () => {

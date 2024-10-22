@@ -61,10 +61,6 @@ main {
   width: 100%;
 }
 
-.inMain {
-  height: 150vh;
-}
-
 .mid > section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -102,11 +98,6 @@ main {
 
 .border {
   margin-top: 5vh;
-}
-
-.bas {
-  height: 130vh;
-  margin-bottom: 10rem;
 }
 
 .bas1 {
@@ -152,7 +143,7 @@ footer {
   gap: 2rem;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .item {
@@ -212,10 +203,6 @@ footer {
     background-size: contain;
   }
 
-  .bas {
-    height: 140vh;
-  }
-
   .bas1 > section > div > p {
     font-size: 22px;
     width: 48vw;
@@ -223,14 +210,14 @@ footer {
 }
 
 @media screen and (max-width: 620px) and (min-width: 551px) {
-  .bas {
-    height: 120vh;
+  .bas1 {
+    height: 250px;
   }
 }
 
 @media screen and (max-width: 550px) and (min-width: 481px) {
-  .bas {
-    height: 110vh;
+  .bas1 {
+    height: 240px;
   }
 }
 
@@ -328,13 +315,9 @@ footer {
     bottom: 5vh;
   }
   
-  .bas {
-    height: 260vw;
-  }
-  
   .bas1 {
     width: 90%;
-    height: 60%;
+    height: 200px;
   }
   
   .bas1 > section > div > p {
@@ -353,4 +336,23 @@ footer {
   footer {
     padding: 0px;
   }
+}
+
+@media screen and (max-width: 321px) {
+  .bas1 {
+    height: 160px;
+  }
+
+  .bas1 > section > div > p {
+    position: relative;
+    right: 10px;
+    width: 50vw;
+    font-size: 3.5vw;
+  }
+
+  .second > section > div > p {
+    right: 0px;
+    left: 10px;
+    text-align: end;
+  } 
 }

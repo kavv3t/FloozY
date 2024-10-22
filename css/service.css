@@ -75,7 +75,7 @@ main {
 .inMain {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -160,14 +160,14 @@ h2 {
   margin-top: 30px;
   padding: 5px 60px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .border {
   border-top: solid 2px black;
   width: 80%;
   position: relative;
-  padding-bottom: 5vh;
-  bottom: 12vh;
+  padding-bottom: 8rem;
 }
 
 .bas {
@@ -175,17 +175,17 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
   position: relative;
-  margin-bottom: 25rem;
+  margin-bottom: 10rem;
 }
 
 .bas1 {
   display: flex;
   justify-content: space-around;
   position: relative;
-  height: 300px;
-  width: 40%;
+  height: 320px;
+  width: 45%;
   align-items: center;
   border: solid 2px rgb(115, 83, 255); 
   margin-bottom: 100px;
@@ -214,7 +214,7 @@ h2 {
   position: relative;
   right: 30px;
   width: 20vw;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
 }
 
 .second > section > div > p {
@@ -236,7 +236,7 @@ h4 {
 .second2 {
   background: url("../images/value.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 80%;
   background-position: center;
 }
 
@@ -318,7 +318,6 @@ footer {
   gap: 2rem;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 10rem;
 }
 
 .item {
@@ -352,22 +351,47 @@ footer {
   font-family: "Afacad Flux", sans-serif;
 }
 
-
-
-@media screen and (max-width: 1200px) and (min-width: 901px) {
-  .bas {
-    height: 90vh;
-  }
-  
+@media screen and (max-width: 1500px) and (min-width: 1201px) {
   .bas1 {
+    height: 300px;
     width: 50%;
   }
 
   .bas1 > section > div > p {
     position: relative;
     right: 30px;
-    width: 25vw;
-    font-size: 1.5vw;
+    width: 22vw;
+    font-size: 1.4vw;
+  }
+
+  .img1 {
+    background-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+  .haut {
+    padding-top: 100px;
+  }
+
+  .mid {
+    padding-top: 50px;
+  }
+
+  .bas1 {
+    width: 60%;
+    height: 300px;
+  }
+
+  .bas1 > section > div > p {
+    position: relative;
+    right: 30px;
+    width: 30vw;
+    font-size: 1.8vw;
+  }
+
+  .img1 {
+    background-size: 70%
   }
 
   .second > section > div > p {

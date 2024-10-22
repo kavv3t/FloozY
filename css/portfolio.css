@@ -59,17 +59,17 @@ nav > ul > li > a:hover {
 color: #7353ff;
 }
 
-.partie1 {
+.partie2 {
   position: fixed;
   background-color: rgb(115, 84, 255);
   height: 50px;
-  right: 60vw;
+  right: 3vw;
   left: 3vw;
-  top: 10%;
+  bottom: 0;
   z-index: 2;
-  border-bottom: solid 3px rgb(51, 27, 233);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top: solid 3px rgb(51, 27, 233);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   transition: all 0.5s ease;
   display: flex;
   align-items: end;
@@ -83,6 +83,7 @@ color: #7353ff;
   color: white;
   height: 100%;
   text-align: center;
+  width: 80%;
 }
 
 h1 {
@@ -95,40 +96,38 @@ h1 {
 
 .team > section {
   display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 25px;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.team > section > p {
+.team > section > .profil {
   padding: 10px 20px;
-  width: 70%;
+  width: 8vw;
   font-size: 1.3rem;
+  height: 200px;
+  border: solid 2px white;
 }
 
-.text1 {
-  border: solid 2px white;
-  border-top-left-radius: 10px;
-  box-shadow: -5px -5px white;
+.person1 {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: -5px 5px white;
 }
 
-.text2 {
-  border: solid 2px white;
+.person2 {
   border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
   box-shadow: 5px 5px white;
-  position: relative;
-  bottom: 30px;
 }
 
 .team > a {
   text-decoration: none;
   color: #7353ff;
   background-color: white;
-  position: relative;
-  bottom: 50px;
   padding: 10px 20px;
   font-size: 1.3rem;
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 .team > a:hover {
@@ -153,7 +152,6 @@ h1 {
   border-bottom-right-radius: 7px;
   margin-right: 10px;
   position: relative;
-  top: 42px;
   font-size: 20px;
   color: white;
   cursor: pointer;
@@ -192,7 +190,7 @@ h1 {
 }
 
 .contImg > p {
-  display: none;
+  display: block;
   color: black;
   font-size: 2.5rem;
   transition: 0.2s;
