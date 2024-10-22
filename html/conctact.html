@@ -29,22 +29,11 @@
         <img src="../images/menu-btn2.png" alt="menu hamburger" class="menu_hamburger">    
     </header>
     <main>
-        <section class="aside">
-            <div class="titre">
-                <h1>CONTACTEZ NOUS</h1>
-                <h2>Nous sommes là pour vous aider</h2>
-            </div>
-            <ul>
-                <li><a href=""><i class="fa-solid fa-phone"></i>téléphone</a></li>
-                <li><a href=""><i class="fa-solid fa-house"></i>Website</a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i>Email</a></li>
-            </ul>
-            <img src="../images/Logo.png" alt="logo" class="logo">
-        </section>
         <section class="contact">
-            <div class="contact-form-container">
                 <form action="#">
                     <p class="underline">Une idée de projet ? Contactez nous</p>
+                    <label class="my-20" for="surname">prénom*</label>
+                    <input type="text" name="name" id="surname">
                     <label class="my-20" for="name">Nom*</label>
                     <input type="text" name="name" id="name">
                     <label class="my-20" for="email">Email*</label>
@@ -53,19 +42,37 @@
                     <textarea name="questions" id="questions"></textarea>
                     <button class="scrollButton deux" onclick="scrollToSection('scroll2')">soumettre</button>
                 </form>
+        </section>
+        <section class="aside">
+            <div class="titre">
+                <h1>CONTACTEZ NOUS</h1>
+                <h2>Nous sommes là pour vous aider</h2>
             </div>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-phone"></i>téléphone</a><a href="" class="a">+32(0)495890117</a></li>
+                <li><a href=""><i class="fa-solid fa-house"></i>Website</a><a href="" class="a">https://kavv3t.github.io/FloozY/</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>Email</a><a href="" class="a">ahdf.developpement@otlook.com</a></li>
+            </ul>
+            <footer>
+                <section class="item">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li> 
+                         <li><i class="fa-brands fa-twitter"></i></li>
+                         <li><i class="fa-brands fa-instagram"></i></li>
+                         <li><i class="fa-brands fa-linkedin"></i></li>
+                         <li><i class="fa-brands fa-tiktok"></i></li>
+                     </ul>
+                </section>
+               <section class="droit">
+                    <a href="">© 2024 HDF, SRL. Tous droits réservés</a>
+                    <a href="">Condition d'utilisation</a>
+                    <a href="">Conditions générales de vente<br>Paramètres de confidentialité et de cookies<br>Guides</a>
+                    <a href="">Mentions légales</a>
+                    <a href="">Politique de confidentialité et de gestion des cookies</a>
+               </section>
+            </footer>
         </section>
     </main>
-    <!-- <div class="border"></div>
-    <footer>
-        <ul>
-           <li><i class="fa-brands fa-facebook"></i></li> 
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-brands fa-tiktok"></i></li>
-        </ul>
-    </footer> -->
 </body>
 <script src="../js/menu.js"></script>
 </html>
