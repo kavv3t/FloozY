@@ -63,31 +63,27 @@ main {
 }
 
 .contact {
-    width: 60%;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     box-sizing: border-box; 
-    padding: 10rem;
-    margin-top: 15vh;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: white;
-    margin-left: auto;
 }
+
+
 
 .aside {
     padding-top: 10rem;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #7353ff;
-    gap: 6rem;
     text-align: center;
     position: fixed;
+    right: 0;
 }
 
 .titre {
@@ -116,6 +112,7 @@ main {
     justify-content: space-around;
     list-style-type: none;
     height: 30vh;
+    padding: 2rem;
 }
 
 .aside > ul > li {
@@ -126,8 +123,8 @@ main {
     font-style: normal;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 5rem;
 }
 
@@ -140,6 +137,10 @@ main {
     gap: 2rem;
 }
 
+.a {
+    font-family: "Afacad Flux", sans-serif;
+    font-style: normal;
+}
 .aside > img {
     width: 15rem;
     height: 15rem;
@@ -149,14 +150,18 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 2rem 2rem 2rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 90%;
+    height: 80%;
     margin: 0 auto;
-    padding: 2rem;
     background-color: #f5f5f5;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+    margin:20%;
 }
 
 form p.underline {
@@ -206,11 +211,6 @@ textarea:focus {
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
-textarea {
-    height: 150px;
-    resize: none;
-}
-
 button.scrollButton.deux {
     background-color: rgb(115, 83, 255);
     color: #fff;
@@ -231,35 +231,39 @@ button.scrollButton.deux:active {
     transform: scale(0.98);
 }
 
-.my-20 {
-    margin-top: 1rem;
+.item {
+    width: 100%;
 }
 
-
-footer {
+.item > ul {
     width: 100%;
-    height: 10%;
-    position: relative;
-    bottom: 0;
-    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item > ul > li {
+    list-style-type: none;
+    color: white;
+    font-size: 2em;
+}
+
+.droit {
+    width: 100%;
+    padding-top: 1em;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;    
     align-items: center;
 }
 
-footer > ul {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-footer > ul > li {
-    list-style-type: none;
-    font-size: 1.5rem;
-    font-family: "Kanit", sans-serif;
+.droit > a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Afacad Flux" ,sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
 }
 
