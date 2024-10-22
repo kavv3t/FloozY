@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
 body {
-  font-size: "Afacad Flux", sans-serif;
+  font-family: "Afacad Flux", sans-serif;
 }
 
 header {
@@ -59,25 +59,88 @@ nav > ul > li > a:hover {
 color: #7353ff;
 }
 
-.partie1 {
+.partie2 {
   position: fixed;
   background-color: rgb(115, 84, 255);
   height: 50px;
-  right: 60vw;
+  right: 3vw;
   left: 3vw;
-  top: 10%;
+  bottom: 0;
   z-index: 2;
-  border-bottom: solid 3px rgb(51, 27, 233);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top: solid 3px rgb(51, 27, 233);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   transition: all 0.5s ease;
   display: flex;
   align-items: end;
   justify-content: end;
 }
 
+.team {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100%;
+  text-align: center;
+  width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+  border: solid 2px white;
+  padding: 10px 20px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px rgb(255, 255, 255), -5px -5px white;
+}
+
+.team > section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.team > section > .profil {
+  padding: 10px 20px;
+  width: 8vw;
+  font-size: 1.3rem;
+  height: 200px;
+  border: solid 2px white;
+}
+
+.person1 {
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: -5px 5px white;
+}
+
+.person2 {
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 5px 5px white;
+}
+
+.team > a {
+  text-decoration: none;
+  color: #7353ff;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.team > a:hover {
+  background-color: rgb(211, 211, 211);
+}
+
 .partie1.expanded {
   height: 500px;
+}
+
+.expanded .team {
+  display: flex;
+  transition: 1s;
 }
 
 .menu-toggle {
@@ -89,9 +152,9 @@ color: #7353ff;
   border-bottom-right-radius: 7px;
   margin-right: 10px;
   position: relative;
-  top: 42px;
   font-size: 20px;
   color: white;
+  cursor: pointer;
 }
 
 .container {
@@ -117,6 +180,7 @@ color: #7353ff;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .container > section:hover {
@@ -125,8 +189,16 @@ color: #7353ff;
   transition: 0.2s;
 }
 
-.contImg {
-  
+.contImg > p {
+  display: block;
+  color: black;
+  font-size: 2.5rem;
+  transition: 0.2s;
+}
+
+.container > section:hover > .contImg > p {
+  display: block;
+  transform: 0.2s;
 }
 
 footer {
