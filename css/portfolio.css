@@ -2,6 +2,7 @@
 
 body {
   font-family: "Afacad Flux", sans-serif;
+  
 }
 
 header {
@@ -125,6 +126,9 @@ main {
 .partie2 {
   margin-top: 50px;
   border-top: solid 2px black;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .partie2 > section {
@@ -193,6 +197,93 @@ h2::after {
   height: 100%;
 }
 
+.innerSecond {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 20px;
+  width: 70%;
+}
+
+.innerSecond > section {
+  height: 400px;
+  width: 30%;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  box-shadow: 0px 15px rgb(115, 84, 255);
+  border-radius: 10px;
+}
+
+.left {
+  box-shadow: -15px 15px rgb(115, 84, 255);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right {
+  box-shadow: 15px 15px rgb(115, 84, 255);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.innerThird {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  border: solid 2px black;
+  background-image: url('../images/greenDev.jpg');
+  background-position: 80% 60%;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  box-shadow: 0px 10px rgb(115, 84, 255);
+  border-radius: 10px;
+}
+
+h3 {
+  width: 60%;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+h3 > span {
+  color: rgb(115, 84, 255);
+  text-decoration: underline;
+}
+
+.innerThird > section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+  width: 65%;
+  margin-top: 50px;
+}
+
+.innerThird > section > a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(115, 84, 255);
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 0px 7px rgb(173, 154, 255);
+  transition: 0.1s;
+  margin-bottom: 30px;
+}
+
+.innerThird > section > a:active {
+  transition: 0.1s;
+  transform: translateY(7px);
+  box-shadow: none;
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -235,10 +326,4 @@ footer {
   text-decoration: none;
   color: black;
   font-family: "Afacad Flux", sans-serif;
-}
-
-@media screen and (max-width: 1500px) {
-  main {
-    flex-wrap: wrap;
-  }
 }
