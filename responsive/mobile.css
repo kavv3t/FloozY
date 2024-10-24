@@ -72,6 +72,12 @@
     z-index: 1;
 }
 
+
+.nav-links.active {
+    left: 0; 
+}
+
+
 .mobile-menu {
     margin-left: 0;
 }

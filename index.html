@@ -108,7 +108,15 @@
        </section>
     </footer>
 </body>
-<script src="js/menu.js"></script>
+<script>
+  const menuHamburger = document.querySelector(".menu_hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+</script>
 </html>
 
 
