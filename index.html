@@ -93,10 +93,9 @@
         <section class="item">
             <ul>
                 <li><i class="fa-brands fa-facebook"></i></li> 
-                 <li><i class="fa-brands fa-twitter"></i></li>
-                 <li><i class="fa-brands fa-instagram"></i></li>
-                 <li><i class="fa-brands fa-linkedin"></i></li>
-                 <li><i class="fa-brands fa-tiktok"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
              </ul>
         </section>
        <section class="droit">
@@ -109,12 +108,16 @@
     </footer>
 </body>
 <script>
-  const menuHamburger = document.querySelector(".menu_hamburger");
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuHamburger = document.querySelector(".menu_hamburger");
     const navLinks = document.querySelector(".nav-links");
 
     menuHamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+});
+
 
 </script>
 </html>

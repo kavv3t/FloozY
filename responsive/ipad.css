@@ -51,5 +51,9 @@
     opacity: 1;
 }
 
+.nav-links.active {
+    margin-left: 0;
+}
+
 
 
