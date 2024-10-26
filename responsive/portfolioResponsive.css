@@ -56,4 +56,31 @@
   .troisieme {
     zoom: 0.6;
   }
+
+  footer {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container > section {
+    width: 300px;
+    height: 200px;
+  }
+
+  .premiere {
+    zoom: 0.6;
+  }
+  
+  .deuxieme {
+    zoom: 0.6;
+  }
+
+  .troisieme {
+    zoom: 0.6;
+  }
+
+  footer {
+    zoom: 0.6;
+  }
 }
