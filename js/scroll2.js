@@ -22,7 +22,7 @@ function scroll(balise) {
           balisage.style.opacity = 1; // Augmente l'opacité
           // Marquer que l'animation s'est déroulée
           // hasAnimated = true;
-      } else if (balise === ".partie2" && animationRect.top < windowHeight + 200 && animationRect.bottom > 200) {
+      } else if (balise === ".partie2" && animationRect.top < windowHeight + 200) { // && animationRect.bottom > 200 ne fonctionne pas apparemment
         balisage.style.transform = "translateY(0)"; // Translate le texte vers le centre
         balisage.style.opacity = 1; 
       } else {

@@ -181,20 +181,18 @@ h2::after {
 .textOne {
   width: 25%;
   height: auto;
-  padding-left: 4vw;
   z-index: 1;
   position: relative;
-  left: 20px;
+  left: 3rem;
 }
 
 .textTwo {
   width: 25%;
   height: auto;
   text-align: end;
-  padding-right: 4vw;
   z-index: 1;
   position: relative;
-  right: 20px;
+  right: 3rem;
 }
 
 .imgOne {
@@ -211,32 +209,9 @@ h2::after {
   flex-direction: row;
   align-content: center;
   gap: 20px;
-  width: 70%;
-}
-
-.innerSecond > section {
-  height: 30vw;
-  width: 30%;
+  width: 800px;
+  height: 400px;
   border: solid 2px black;
-  display: flex;
-  justify-content: center;
-}
-
-.middle {
-  box-shadow: 0px 15px rgb(115, 84, 255);
-  border-radius: 10px;
-}
-
-.left {
-  box-shadow: -15px 15px rgb(115, 84, 255);
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.right {
-  box-shadow: 15px 15px rgb(115, 84, 255);
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .innerThird {
@@ -244,7 +219,8 @@ h2::after {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  width: 50%;
+  width: 670px;
+  height: 450px;
   border: solid 2px black;
   background-image: url('../images/greenDev.jpg');
   background-position: 85% 60%;
@@ -259,6 +235,8 @@ h3 {
   font-size: 2rem;
   border-radius: 10px;
   padding: 10px 20px;
+  position: relative;
+  bottom: 1rem;
 }
 
 h3 > span {
@@ -293,61 +271,13 @@ h3 > span {
   box-shadow: none;
 }
 
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-top: 10rem;
-}
-
-.item {
-  width: 30%;
-  margin: auto;
-}
-
-.item > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.item > ul > li {
-  list-style-type: none;
-  font-size: 2rem;
-  color: #7353ff;
-}
-
-.droit {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0rem 2rem 2rem 2rem;
-  box-sizing: border-box;
-}
-
-.droit > a {
-  text-decoration: none;
-  color: black;
-  font-family: "Afacad Flux", sans-serif;
-}
-
 @media screen and (max-width: 1300px) {
   .deuxieme {
     height: 400px;
   }
 
   .innerSecond {
-    width: 900px;
-  }
-
-  .innerSecond > section {
-    height: 400px;
+    width: 700px;
   }
 }
 
@@ -366,14 +296,12 @@ footer {
   
   .textOne {
     width: 30%;
-    padding-left: 2vw;
-    left: 10px;
+    left: 1rem;
   }
   
   .textTwo {
     width: 30%;
-    padding-right: 2vw;
-    right: 10px;
+    right: 1rem;
   }
   
   .imgOne {
@@ -390,10 +318,57 @@ footer {
   }
 
   .innerSecond {
-    width: 700px;
+    width: 550px;
+    height: 350px;
   }
 
-  .innerSecond > section {
-    height: 300px;
+  .innerThird {
+    width: 550px;
+    height: 400px;
+  }
+  
+  h3 {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  .innerThird > section > a {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .premiere {
+    zoom: 1.2;
+  }
+
+  .textOne {
+    left: 2rem;
+  }
+
+  .textTwo {
+    right: 2rem;
+  }
+
+  .deuxieme {
+    zoom: 1.2;
+  }
+
+  .troisieme {
+    zoom: 1.2;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .premiere {
+    zoom: 1.4;
+  }
+
+  .deuxieme {
+    zoom: 1.4;
+  }
+
+  .troisieme {
+    zoom: 1.4;
   }
 }
