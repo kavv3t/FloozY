@@ -181,20 +181,18 @@ h2::after {
 .textOne {
   width: 25%;
   height: auto;
-  padding-left: 4vw;
   z-index: 1;
   position: relative;
-  left: 20px;
+  left: 3rem;
 }
 
 .textTwo {
   width: 25%;
   height: auto;
   text-align: end;
-  padding-right: 4vw;
   z-index: 1;
   position: relative;
-  right: 20px;
+  right: 3rem;
 }
 
 .imgOne {
@@ -237,6 +235,8 @@ h3 {
   font-size: 2rem;
   border-radius: 10px;
   padding: 10px 20px;
+  position: relative;
+  bottom: 1rem;
 }
 
 h3 > span {
@@ -275,24 +275,28 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 10vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .item {
-  width: 30%;
+  width: 100%;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .item > ul {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 8rem;
+  position: relative;
+  right: 20px;
 }
 
 .item > ul > li {
@@ -303,7 +307,9 @@ footer {
 
 .droit {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
   width: 100%;
   padding: 0rem 2rem 2rem 2rem;
   box-sizing: border-box;
@@ -312,7 +318,7 @@ footer {
 .droit > a {
   text-decoration: none;
   color: black;
-  font-family: "Afacad Flux", sans-serif;
+  font-family: "Afacad Flux", sans-serif; 
 }
 
 @media screen and (max-width: 1300px) {
@@ -340,14 +346,12 @@ footer {
   
   .textOne {
     width: 30%;
-    padding-left: 2vw;
-    left: 10px;
+    left: 1rem;
   }
   
   .textTwo {
     width: 30%;
-    padding-right: 2vw;
-    right: 10px;
+    right: 1rem;
   }
   
   .imgOne {
@@ -380,5 +384,41 @@ footer {
 
   .innerThird > section > a {
     zoom: 0.8;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .premiere {
+    zoom: 1.2;
+  }
+
+  .textOne {
+    left: 2rem;
+  }
+
+  .textTwo {
+    right: 2rem;
+  }
+
+  .deuxieme {
+    zoom: 1.2;
+  }
+
+  .troisieme {
+    zoom: 1.2;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .premiere {
+    zoom: 1.4;
+  }
+
+  .deuxieme {
+    zoom: 1.4;
+  }
+
+  .troisieme {
+    zoom: 1.4;
   }
 }

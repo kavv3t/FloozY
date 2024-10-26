@@ -48,3 +48,53 @@
   font-style: normal;
   font-size: 1.5rem;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 4rem;
+}
+
+.item {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  position: relative;
+  right: 20px;
+}
+
+.item > ul > li {
+  list-style-type: none;
+  font-size: 2rem;
+  color: #7353ff;
+}
+
+.droit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 0rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+}
+
+.droit > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Afacad Flux", sans-serif; 
+}
