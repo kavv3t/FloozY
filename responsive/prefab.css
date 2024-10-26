@@ -152,15 +152,11 @@ footer {
 }
 
 @media screen and (min-width: 1400px) {
-  .item > ul {
-    
-  }
-  
   .item > ul > li {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   .droit > a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
