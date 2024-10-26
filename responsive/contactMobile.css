@@ -1,5 +1,5 @@
 body {
-    height: 1000px;
+  width: 100vw;
 }
 
 header {
@@ -59,10 +59,12 @@ header {
 
 main {
     display: block;
+    height: auto;
+    width: auto;
 }
 
 .aside {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -72,10 +74,16 @@ main {
 }
 
 .contact {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     box-sizing: border-box; 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+footer {
+  margin-top: 5rem;
+  bottom: 0;
 }

@@ -359,6 +359,10 @@ footer {
   font-family: "Afacad Flux", sans-serif;
 }
 
+.item > ul > li  {
+  color: #7353ff;
+}
+
 @media screen and (max-width: 1500px) and (min-width: 1201px) {
   .bas1 {
     height: 300px;

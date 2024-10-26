@@ -8,7 +8,7 @@ footer {
   gap: 2rem;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 .item {
@@ -110,7 +110,7 @@ footer {
     gap: 2rem;
     justify-content: center;
     box-sizing: border-box;
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
   
   .item {
@@ -125,7 +125,6 @@ footer {
     justify-content: space-around;
     gap: 2rem;
     position: relative;
-    right: 20px;
   }
   
   .item > ul > li {

@@ -1,3 +1,6 @@
+
+
+
 .texte {
     padding-top: 2rem;
     width: 100%;
@@ -41,61 +44,6 @@
     object-fit: cover;
     width: 80vw;
     height: 60vh;
-}
-
-
-.menu_hamburger {
-    display: block;
-    z-index: 2;
-    margin-left: auto;
-    height: 3rem;
-    right: 0.5rem;
-    top: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-}
-
-.nav-links {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgba(39, 38, 38, 0.656);
-    backdrop-filter: blur(3px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: -100vw;
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
-}
-
-.nav-links.active {
-    margin-left: 0;
-}
-
-
-.mobile-menu {
-    margin-left: 0;
-}
-
-.nav-links > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 5rem;
-    padding: 0%;
-}
-
-.nav-links > ul > li > a {
-    color: white;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
 }
 
 
@@ -156,53 +104,8 @@
 .sectionImage .overlay {
     opacity: 1;
 }
+ 
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-top: 10rem;
-  }
-  
-  .item {
-    width: 30vh;
-    margin: auto;
-    box-sizing: border-box;
-  }
-  
-  .item > ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-  }
-  
-  .item > ul > li {
-    list-style-type: none;
-    font-size: 2rem;
-    color: #7353ff;
-  }
-  
-  .droit {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 100%;
-    padding: 0rem 2rem 2rem 2rem;
-    box-sizing: border-box;
-  }
-  
-  .droit > a {
-    text-decoration: none;
-    color: black;
-    font-family: "Afacad Flux", sans-serif; 
-  }
-  
-
-
+.menu_hamburger {
+    display: block;
+}
