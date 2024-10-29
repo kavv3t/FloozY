@@ -6,8 +6,11 @@ body {
 
 .partie2 {
   margin-top: 200px;
-  opacity: 1;
-  /*transform: translateY(50%);*/
+}
+
+.partie3 {
+  opacity: 0;
+  transform: translateY(50%);
   transition: transform 1s ease, opacity 1s ease;
 }
 
