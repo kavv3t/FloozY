@@ -244,14 +244,15 @@ body {
 
 
 .section1 > h2 {
-    font-size: 1.5rem;
-    font-family: "Kanit", sans-serif;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
     font-style: normal;
 }
 
-.section1 > p {
-    font-family: "Kanit", sans-serif;
+.containerimage p {
+    font-size: 1.1rem;
+    font-family: "Afacad Flux", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
@@ -263,15 +264,6 @@ body {
     width: 10rem;
 }
 
-
-
-/* .section {
-    width: 25%;
-    height: 60vh;
-    overflow: hidden;
-    border-radius: 50px;
-    position: relative;
-} */
 
 
 .first {
@@ -338,7 +330,118 @@ body {
 
 .item > ul > li  {
     color: #7353ff;
-  }
+}
+
+.description {
+    width:  100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+
+}
+
+.services {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 8rem;
+    padding-left: 8rem;
+} 
+
+.services section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.services > div > h2 {
+    font-size: 2.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.service-item > div > h5 {
+    font-size: 1.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.service-item > div > i {
+    font-size: 1.5rem;
+    color: #7353ff;
+}
+
+
+.description > h2{
+    font-size: 2.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 4rem;
+}
+
+.description > h3 {
+    font-size: 1.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 3rem;
+}
+
+.service-item {
+    height: 12rem;
+    cursor: pointer;
+    display: block;
+}
+
+.service-item > div {
+    display: flex;
+    gap: 3 rem;
+}
+
+.over {
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Affiche `.over` quand le conteneur `.service-item` est survolé */
+.service-item:hover .over {
+    opacity: 1;
+    max-height: 500px; /* Ajustez selon le contenu */
+}
+
+.over > p {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 1.2rem;
+}
+
+
+.titreh2 {
+    margin: 5rem;
+    text-align: center;
+}
+
+.titreh2 > h2 {
+    font-size: 2.5rem;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 4rem;
+}
 
   @media screen and (max-width: 1350px) {
   

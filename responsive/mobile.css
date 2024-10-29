@@ -74,7 +74,7 @@
 
 .section1 {
     width: 80%;
-    height: 320px;
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -122,4 +122,21 @@
 
 .section1 .overlay {
     display: none;
+}
+
+.services {
+    padding: 0;
+}
+
+.service-item {
+    height: auto;
+    padding: 2rem;
+}
+
+.description {
+    margin-bottom: 30rem;
+}
+
+.description > h3 {
+    margin-top: 8rem;
 }
