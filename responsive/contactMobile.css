@@ -3,18 +3,6 @@ header {
     top: 0;
 }
 
-
-.menu_hamburger {
-    display: block;
-    z-index: 1;
-    margin-left: auto;
-    height: 3rem;
-    right: 0.5rem;
-    top: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
-  }
-  
   .nav-links {
     top: 0;
     left: 0;
