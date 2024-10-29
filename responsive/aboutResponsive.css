@@ -1,0 +1,61 @@
+.premiere {
+  zoom: 0.85;
+}
+
+/*.deuxieme {
+  zoom: 0.85;
+}*/
+
+.troisieme {
+  zoom: 0.85;
+}
+
+@media screen and (max-width: 500px) {
+  .premiere {
+    zoom: 0.7;
+  }
+  
+  /*.deuxieme {
+    zoom: 0.7;
+  }*/
+
+  .troisieme {
+    zoom: 0.7;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .premiere {
+    zoom: 0.6;
+  }
+  
+  /*.deuxieme {
+    zoom: 0.6;
+  }*/
+
+  .troisieme {
+    zoom: 0.6;
+  }
+
+  footer {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .premiere {
+    zoom: 0.6;
+  }
+  
+  /*.deuxieme {
+    zoom: 0.6;
+  }*/
+
+  .troisieme {
+    zoom: 0.6;
+  }
+
+  footer {
+    zoom: 0.6;
+  }
+}
