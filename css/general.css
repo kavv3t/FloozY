@@ -415,6 +415,12 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 1.3rem;
+    height: auto;
+}
+
+.over {
+    height: auto;
+    margin: none;
 }
 
 .description > h2{
@@ -447,6 +453,18 @@ body {
     font-style: normal;
     margin-bottom: 4rem;
 } 
+
+.buttun1 {
+    background-color: rgb(115, 83, 255);
+    color: white;
+    border: none;
+    width: auto;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
   @media screen and (max-width: 1350px) {
   
