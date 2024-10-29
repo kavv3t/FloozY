@@ -129,8 +129,16 @@
 }
 
 .service-item {
+    margin-bottom: 2rem;
+}
+
+.over > p {
     height: auto;
     box-sizing: border-box;
+}
+
+.description {
+    height: auto;
 }
 
 .description > h2 {
