@@ -42,6 +42,20 @@
     margin-top: 15vh;
   }
 
+  .textOne,
+  .textTwo {
+    font-size: 1.07rem;
+    width: 35%;
+  }
+
+  .textOne {
+    left: 2rem;
+  }
+
+  .textTwo {
+    right: 2rem;
+  }
+
   .premiere {
     zoom: 0.7;
   }
