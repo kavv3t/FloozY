@@ -75,6 +75,35 @@ body {
     font-style: normal;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buttun1 {
+    background-color: rgb(115, 83, 255);
+    color: white;
+    border: none;
+    width: auto;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.services {
+    display: flex;
+}
+
+
+
 .buttun {
     background-color: rgb(115, 83, 255);
     color: white;
@@ -187,25 +216,62 @@ body {
 }
 
 
-.sectionProjet {
+.sectionValeur {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
-    padding: 0rem 4rem 4rem 4rem;
     box-sizing: border-box;
+    padding: 4rem;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    height: 320px;
+    padding: 3rem;
+    width: 25%;
+    align-items: center;
+    border: solid 2px rgb(115, 83, 255); 
+    margin-bottom: 100px;
+    border-radius: 15px;
+    box-shadow: 0px -20px rgb(115, 83, 255);
 }
 
 
-.section {
+
+.section1 > h2 {
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section1 > p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.containerimage {
+    display: flex;
+}
+.containerimage > img{
+    width: 10rem;
+}
+
+
+
+/* .section {
     width: 25%;
     height: 60vh;
     overflow: hidden;
     border-radius: 50px;
     position: relative;
-}
+} */
 
 
 .first {
@@ -240,21 +306,17 @@ body {
     transition: 0.3s ease;
 }
 
-.sectionImage .overlay {
+.section1 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.6); 
-    flex-direction: column;
-    justify-content: space-around;
+    height: 50%;
+    display: flex; 
+    justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.6s ease;
     text-align: center;
-    color: white;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -262,20 +324,9 @@ body {
     border-radius: 50px;
 }
 
-.sectionImage .text {
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.sectionImage:hover .overlay {
+.section1:hover .overlay {
     opacity: 1;
-}
-
-.sectionImage:hover .text {
-    opacity: 1;
+    transition: all 0.6s ease;
 }
 
 .scrollButton > a{
@@ -285,52 +336,66 @@ body {
 }
 
 
-/* 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    box-sizing: border-box;
-    margin-top: 5rem;
-}
-
-
-.item {
-    width: 30%;
-    margin: auto;
-}
-
-.item > ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.item > ul > li {
-    list-style-type: none;
-    font-size: 2rem;
-    color: #7353ff;
-}
-
-.droit {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0rem 2rem 2rem 2rem;
-    box-sizing: border-box;
-}
-
-.droit > a {
-    text-decoration: none;
-    color: black;
-    font-family: "Afacad Flux", sans-serif;
-} */
-
 .item > ul > li  {
     color: #7353ff;
   }
+
+  @media screen and (max-width: 1350px) {
+  
+
+    .sectionValeur {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        height: 320px;
+        padding: 3rem;
+        width: 20%;
+        align-items: center;
+        border: solid 2px rgb(115, 83, 255); 
+        margin-bottom: 100px;
+        border-radius: 15px;
+        box-shadow: 0px -20px rgb(115, 83, 255);
+        text-align: center;
+    }
+    
+    .section1 .overlay {
+        display: none;
+    }
+    
+    .section1 > h2 {
+        font-size: 1.5rem;
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+    .section1 > p {
+        font-family: "Kanit", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .containerimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .containerimage > img{
+        width: 10rem;
+    }
+    
+}  
+  

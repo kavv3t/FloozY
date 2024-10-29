@@ -36,13 +36,19 @@
         <section class="contact">
                 <form action="#">
                     <p class="underline">Une idée de projet ? Contactez nous</p>
-                    <label class="my-20" for="surname">prénom*</label>
+                    <label class="my-20" for="surname">Prénom*</label>
                     <input type="text" name="name" id="surname">
                     <label class="my-20" for="name">Nom*</label>
                     <input type="text" name="name" id="name">
                     <label class="my-20" for="email">Email*</label>
                     <input type="email" name="email" id="email">
-                    <label class="my-20" for="questions">questions/remarques</label>
+                    <label class="my-20" for="siteSelect">choisissez le type de site internet*</label>
+                    <select name="site" id="siteWeb">
+                        <option value="">--veuillez choisir le site web--</option>
+                        <option value="vitrine">site vitrine</option>
+                        <option value="réservation">site de réservation</option>
+                    </select>
+                    <label class="my-20" for="questions">description</label>
                     <textarea name="questions" id="questions"></textarea>
                     <button class="scrollButton deux" onclick="scrollToSection('scroll2')">soumettre</button>
                 </form>

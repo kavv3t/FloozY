@@ -59,25 +59,36 @@
 }
 
 
-.sectionProjet {
+.sectionValeur {
+    margin-top: 4rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    overflow: hidden;
     gap: 4rem;
     padding: 0rem 4rem 4rem 4rem;
     box-sizing: border-box;
 }
 
-.section {
-    width: 100%;
-    height: 40vh;
+.section1 {
+    width: 80%;
+    height: 320px;
     overflow: hidden;
-    border-radius: 50px;
     position: relative;
+}
+
+.containerimage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerimage > img {
+    object-fit: cover;
+   
 }
 
 .scrollButton {
@@ -107,4 +118,8 @@
 
 .menu_hamburger {
     display: block;
+}
+
+.section1 .overlay {
+    display: none;
 }
