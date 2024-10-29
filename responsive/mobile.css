@@ -130,13 +130,24 @@
 
 .service-item {
     height: auto;
-    padding: 2rem;
+    box-sizing: border-box;
 }
 
-.description {
-    margin-bottom: 30rem;
+.description > h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 .description > h3 {
-    margin-top: 8rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.titreh2 > h2{
+    font-size: 2rem;
+}
+
+.over {
+    height: auto;
+    margin: none;
 }

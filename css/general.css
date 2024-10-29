@@ -332,21 +332,67 @@ body {
     color: #7353ff;
 }
 
+.services {
+    margin: 0;
+    padding: 0;
+}
+.service-item {
+    list-style: none;
+}
+.toggle-checkbox {
+    display: none;
+}
+
+/* Chevron et titre */
+.service-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.service-header > h5,i {
+    font-size: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.chevron {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+    color: #7353ff;
+}
+
+
+.over {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+
+.toggle-checkbox:checked + .service-header .chevron {
+    transform: rotate(90deg);
+}
+.toggle-checkbox:checked ~ .over {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 5px;
+}
 .description {
     width:  100%;
-    height: 120vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
     box-sizing: border-box;
-    margin-bottom: 10rem;
 
 }
 
 .services {
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -361,29 +407,16 @@ body {
     display: flex;
     flex-direction: column;
     margin-right: auto;
-    gap: 2rem;
-    padding: 2rem;
+    
+    
 }
 
-.services > div > h2 {
-    font-size: 2.5rem;
+.over > p {
     font-family: "Afacad Flux", sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 1rem;
 }
-
-.service-item > div > h5 {
-    font-size: 1.5rem;
-    font-family: "Afacad Flux", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.service-item > div > i {
-    font-size: 1.5rem;
-    color: #7353ff;
-}
-
 
 .description > h2{
     font-size: 2.5rem;
@@ -399,34 +432,7 @@ body {
     font-weight: 600;
     font-style: normal;
     margin-top: 3rem;
-}
-
-.service-item {
-    height: 12rem;
-    cursor: pointer;
-    display: block;
-}
-
-.service-item > div {
-    display: flex;
-    gap: 3 rem;
-}
-
-.over {
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
-}
-
-/* Affiche `.over` quand le conteneur `.service-item` est survolé */
-.service-item:hover .over {
-    opacity: 1;
-    max-height: 500px; /* Ajustez selon le contenu */
-}
-
-.over > p {
-    font-family: "Afacad Flux", sans-serif;
-    font-size: 1.2rem;
+    text-align: center;
 }
 
 
@@ -441,7 +447,7 @@ body {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 4rem;
-}
+} 
 
   @media screen and (max-width: 1350px) {
   
@@ -461,7 +467,7 @@ body {
         flex-direction: column;
         gap: 2rem;
         position: relative;
-        height: 320px;
+        height: 400px;
         padding: 3rem;
         width: 20%;
         align-items: center;
@@ -498,6 +504,7 @@ body {
     }
     .containerimage > img{
         width: 10rem;
+        object-fit: cover;
     }
     
 }  
