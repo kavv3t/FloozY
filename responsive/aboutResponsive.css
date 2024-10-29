@@ -55,7 +55,7 @@
   }
 
   .line {
-    top: 107rem;
+    display: none;
   }
 }
 
@@ -74,10 +74,6 @@
 
   footer {
     zoom: 0.8;
-  }
-
-  .line {
-    width: 90%;
   }
 
   .present {
