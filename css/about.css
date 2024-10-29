@@ -6,8 +6,8 @@ body {
 
 .partie2 {
   margin-top: 200px;
-  opacity: 0;
-  transform: translateY(50%);
+  opacity: 1;
+  /*transform: translateY(50%);*/
   transition: transform 1s ease, opacity 1s ease;
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 
 h2::after {
-  content: "équipe";
+  content: "résumé";
   padding-left: 10px;
   color: rgb(115, 84, 255);
 }
@@ -94,6 +94,94 @@ h2::after {
   border: solid 2px black;
 }
 
+.present {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.inPresent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pres1,
+.pres2 {
+  height: 400px;
+  width: 500px;
+}
+
+.pres1,
+.pres2 {
+  border: solid 2px black;
+  transform: translateX(-20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px rgb(115, 84, 255);
+}
+
+.pres3 {
+  border: solid 2px black;
+  transform: translateX(20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -10px 10px rgb(115, 84, 255);
+  height: 600px;
+  width: 500px;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+h3 > span {
+  color: rgb(115, 84, 255);
+}
+
+.pres3 > h3 > span {
+  text-decoration: underline;
+}
+
+.pres1 > p {
+  padding: 0px 30px;
+  font-size: 1.5rem;
+}
+
+.pres2 > p {
+  padding: 0px 30px;
+  font-size: 1.25rem;
+  position: relative;
+  bottom: 20px;
+}
+
+.pres3 > section > p {
+  padding: 0px 30px;
+  font-size: 1.25rem;
+  position: relative;
+  bottom: 20px;
+}
+
+.pres3 > section > p > span {
+  color: rgb(77, 36, 255);
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.line {
+  position: absolute;
+  width: 4px;
+  height: 800px;
+  background-color: rgb(115, 84, 255);
+  border-radius: 10px;
+}
+
 .innerThird {
   display: flex;
   flex-direction: column;
@@ -110,7 +198,7 @@ h2::after {
   border-radius: 10px;
 }
 
-h3 {
+h4 {
   width: 60%;
   font-size: 2rem;
   border-radius: 10px;
@@ -119,7 +207,7 @@ h3 {
   bottom: 1rem;
 }
 
-h3 > span {
+h4 > span {
   color: rgb(115, 84, 255);
   text-decoration: underline;
 }
@@ -171,6 +259,10 @@ footer {
   .innerSecond {
     width: 700px;
   }
+
+  .present {
+    zoom: 0.8;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -220,13 +312,26 @@ footer {
     height: 400px;
   }
   
-  h3 {
+  h4 {
     width: 60%;
     font-size: 1.5rem;
   }
 
   .innerThird > section > a {
     zoom: 0.8;
+  }
+
+  .present {
+    zoom: 0.65;
+  }
+
+  .pres1,
+  .pres2 {
+    transform: translateX(-12%);
+  }
+
+  .pres3 {
+    transform: translateX(12%);
   }
 }
 
