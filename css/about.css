@@ -38,13 +38,16 @@ body {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 10px 10px rgb(115, 84, 255);
+  background-image: url('../images/Project_44-08.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 .innerFirst > section {
   display: flex;
   flex-direction: row;
   height: 100%;
-  font-size: 1.08rem;
 }
 
 h2 {
@@ -62,29 +65,30 @@ h2::after {
 }
 
 .textOne {
-  width: 25%;
+  position: relative;
+  left: 1.5rem;
+  width: 35%;
   height: auto;
   z-index: 1;
-  position: relative;
-  left: 3rem;
+  font-size: 1.55rem;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px white;
+}
+
+.separation {
+  width: 30%;
 }
 
 .textTwo {
-  width: 25%;
+  position: relative;
+  right: 1.5rem;
+  width: 35%;
   height: auto;
   text-align: end;
   z-index: 1;
-  position: relative;
-  right: 3rem;
-}
-
-.imgOne {
-  background-image: url("../images/Project_44-08.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 60%;
-  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px white;
 }
 
 .innerSecond {
@@ -282,13 +286,13 @@ footer {
   }
   
   .textOne {
-    width: 30%;
     left: 1rem;
+    font-size: 1.2rem;
   }
   
   .textTwo {
-    width: 30%;
     right: 1rem;
+    font-size: 1.25rem;
   }
   
   .imgOne {
@@ -331,10 +335,12 @@ footer {
   .pres1,
   .pres2 {
     transform: translateX(-12%);
+    zoom: 1.10;
   }
 
   .pres3 {
     transform: translateX(12%);
+    zoom: 1.10;
   }
 }
 

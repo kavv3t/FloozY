@@ -14,9 +14,7 @@
 }
 
 .line {
-  width: 60%;
-  top: 113rem;
-  height: 6px;
+  display: none;
 }
 
 .premiere {
@@ -31,10 +29,8 @@
   zoom: 0.85;
 }
 
-@media screen and (max-width: 600px) {
-  .line {
-    width: 80%;
-  }
+.textOne {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -44,7 +40,6 @@
 
   .textOne,
   .textTwo {
-    font-size: 1.07rem;
     width: 35%;
   }
 
@@ -57,7 +52,7 @@
   }
 
   .premiere {
-    zoom: 0.7;
+    zoom: 0.8;
   }
   
   /*.deuxieme {
@@ -65,17 +60,24 @@
   }*/
 
   .troisieme {
-    zoom: 0.7;
-  }
-
-  .line {
-    display: none;
+    zoom: 0.8;
   }
 }
 
 @media screen and (max-width: 425px) {
   .premiere {
-    zoom: 0.6;
+    zoom: 0.7;
+  }
+
+  .innerFirst {
+    background-image: url('../images/Project_44-08.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+
+  .imgOne {
+    background-image: none;
   }
   
   /*.deuxieme {
@@ -83,7 +85,7 @@
   }*/
 
   .troisieme {
-    zoom: 0.6;
+    zoom: 0.7;
   }
 
   footer {
@@ -95,7 +97,25 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
+  .premiere {
+    zoom: 0.65;
+  }
+
+  .present {
+    zoom: 0.5;
+  }
+
+  .textOne {
+    font-size: 1.18rem;
+  }
+
+  .textTwo {
+    font-size: 1.28rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
   .premiere {
     zoom: 0.6;
   }
