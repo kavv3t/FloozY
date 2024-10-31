@@ -380,7 +380,7 @@ body {
 }
 .description {
     width:  100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -391,13 +391,14 @@ body {
 }
 
 .services {
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-right: 8rem;
     padding-left: 8rem;
+    gap: 4rem;
 } 
 
 .services section {
