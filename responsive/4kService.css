@@ -10,7 +10,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   color: black;
-  zoom: 1.5;
+  zoom: 1.4;
 }
 
 .mid {
@@ -20,7 +20,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   padding-top: 100px;
-  zoom: 1.5;
+  zoom: 1.4;
 }
 
 .nav-links.active {
@@ -28,11 +28,11 @@ h2 {
 }
 
 .bas1 {
-  zoom: 1.2;
+  zoom: 1.1;
 }
 
 @media screen and (min-width: 2200px) {
   .bas1 {
-    zoom: 1.4;
+    zoom: 1.3;
   }
 }

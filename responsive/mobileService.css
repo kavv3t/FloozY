@@ -1,5 +1,6 @@
 .bas1 {
   zoom: 0.8;
+  height: auto;
 }
 
 h2 {
@@ -53,38 +54,6 @@ main {
 
 .border {
   margin-top: 5vh;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-top: 4rem;
-}
-
-.item {
-  width: 30vh;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.item > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
-}
-
-.item > ul > li {
-  list-style-type: none;
-  font-size: 2rem;
-  color: #7353ff;
 }
 
 .droit {
@@ -236,7 +205,43 @@ footer {
   .first,
   .second,
   .third {
+    zoom: 0.45;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .first,
+  .second,
+  .third {
     zoom: 0.4;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .first,
+  .second,
+  .third {
+    zoom: 0.38;
+  }
+
+  .subIm1,
+  .subIm2,
+  .subIm3 {
+    zoom: 0.9;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .first,
+  .second,
+  .third {
+    zoom: 0.34;
+  }
+
+  .subIm1,
+  .subIm2,
+  .subIm3 {
+    zoom: 0.8;
   }
 }
 
