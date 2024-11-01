@@ -1,4 +1,6 @@
-
+.bas1 {
+  zoom: 0.8;
+}
 
 h2 {
   padding-top: 80px;
@@ -53,39 +55,6 @@ main {
   margin-top: 5vh;
 }
 
-.bas1 {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  height: 300px;
-  width: 80%;
-  align-items: center;
-  border: solid 2px rgb(115, 83, 255); 
-  margin-bottom: 100px;
-  border-radius: 15px;
-  box-shadow: 0px -20px rgb(115, 83, 255);
-}
-
-.img1 {
-  background: url("../images/value.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  width: 300px;
-  height: 40vw;
-}
-
-.bas1 > section > div > p {
-  position: relative;
-  right: 10px;
-  width: 45vw;
-  font-size: 3vw;
-}
-
-h4 {
-  font-size: 4vw;
-}
-
 footer {
   position: relative;
   bottom: 0;
@@ -134,6 +103,142 @@ footer {
   font-family: "Afacad Flux", sans-serif; 
 }
 
+@media screen and (max-width: 700px) {
+  /*.first1,
+  .first2 {
+    display: none;
+  }
+
+  .first {
+    border: none;
+    box-shadow: none;
+    gap: 40px;
+  }
+
+  .art1,
+  .art2 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .art1 > section,
+  .art2 > section {
+    width: 80%;
+    align-items: center;
+    background-color: rgb(115, 84, 255);
+    border-radius: 10px;
+    box-shadow: 0px 15px rgb(78, 56, 173);
+    padding: 15px;
+    color: white;
+  }
+
+  .art1 > section > h4,
+  .art2 > section > h4 {
+    font-size: 2.4rem;
+    left: 0;
+  }
+
+  .basText1,
+  .basText2 {
+    right: 0;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+  }*/
+
+  .first {
+    zoom: 0.7;
+  }
+
+  .art1 > section,
+  .art2 > section {
+    width: 80%;
+  }
+
+  .basText1,
+  .basText2 {
+    font-size: 1.84rem;
+  }
+
+  .second {
+    height: auto;
+    zoom: 0.7;
+  }
+
+  .artSec1 {
+    height: 40%;
+  }
+
+  .artSec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    width: 90%;
+    padding-bottom: 30px;
+  }
+
+  .secSec1,
+  .secSec2 {
+    height: 50%;
+  }
+
+  .secSec1 > h5,
+  .secSec2 > h5 {
+    font-size: 2.5rem;
+  }
+
+  .basText4,
+  .basText5 {
+    font-size: 2rem;
+  }
+
+  .third {
+    zoom: 0.7;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first,
+  .second,
+  .third {
+    zoom: 0.6;
+  }
+
+  .artThir2 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .first,
+  .second,
+  .third {
+    zoom: 0.5;
+  }
+
+  .art1 > section,
+  .art2 > section {
+    width: 100%;
+  }
+
+  .basText1,
+  .basText2 {
+    font-size: 1.98rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .first,
+  .second,
+  .third {
+    zoom: 0.4;
+  }
+}
 
 @media screen and (min-width: 701px) {
   .subSec {
@@ -154,23 +259,6 @@ footer {
     width: 250px;
     height: 250px;
     background-size: contain;
-  }
-
-  .bas1 > section > div > p {
-    font-size: 22px;
-    width: 48vw;
-  }
-}
-
-@media screen and (max-width: 620px) and (min-width: 551px) {
-  .bas1 {
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 550px) and (min-width: 481px) {
-  .bas1 {
-    height: 240px;
   }
 }
 
@@ -267,45 +355,4 @@ footer {
   .border2 {
     bottom: 5vh;
   }
-  
-  .bas1 {
-    width: 90%;
-    height: 200px;
-  }
-  
-  .bas1 > section > div > p {
-    position: relative;
-    right: 10px;
-    width: 40vw;
-    font-size: 3.1vw;
-  }
-  
-  .second > section > div > p {
-    right: 0px;
-    left: 30px;
-    text-align: end;
-  } 
-
-  footer {
-    padding: 0px;
-  }
-}
-
-@media screen and (max-width: 321px) {
-  .bas1 {
-    height: 160px;
-  }
-
-  .bas1 > section > div > p {
-    position: relative;
-    right: 10px;
-    width: 50vw;
-    font-size: 3.5vw;
-  }
-
-  .second > section > div > p {
-    right: 0px;
-    left: 10px;
-    text-align: end;
-  } 
 }

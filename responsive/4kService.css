@@ -23,28 +23,16 @@ h2 {
   zoom: 1.5;
 }
 
-.bas1 {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  height: 400px;
-  width: 40%;
-  align-items: center;
-  border: solid 2px rgb(115, 83, 255); 
-  margin-bottom: 100px;
-  border-radius: 15px;
-  box-shadow: 0px -20px rgb(115, 83, 255);
-}
-
-
-.img1 {
-  background: url("../images/value.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70%;
-  width: 400px;
-  height: 40vw;
-}
 .nav-links.active {
   margin-left: 0;
+}
+
+.bas1 {
+  zoom: 1.2;
+}
+
+@media screen and (min-width: 2200px) {
+  .bas1 {
+    zoom: 1.4;
+  }
 }
