@@ -258,6 +258,10 @@ footer {
   margin-top: 100px;
 }
 
+.item {
+  width: 30%;
+}
+
 @media screen and (max-width: 1300px) {
   /*.deuxieme {
     height: 400px;
