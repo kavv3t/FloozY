@@ -78,9 +78,13 @@ h2::after {
 .innerFirst > section > p {
   /*border: solid 3px rgb(115, 84, 255);*/
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px;
   color: white;
-  background-color: rgb(115, 84, 255);
+  background-color: rgb(115, 84, 255); */
+  text-align: center;
+  color: black;
+  border-top: 3px solid #7353ff;
+  border-bottom: 3px solid #7353ff;
 }
 
 .textOne {
