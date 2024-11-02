@@ -37,6 +37,7 @@ footer {
     text-decoration: none;
     color: black;
     font-family: "Afacad Flux", sans-serif;
+    text-align: center;
 }
 
 .service-header > h5,i {
