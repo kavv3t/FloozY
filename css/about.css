@@ -101,13 +101,13 @@ h2::after {
 }
 
 .imgFirst {
-  background-image: url('../images/Project_44-08.jpg');
+  background-image: url('../images/nouvelle_imageAceuil.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 31.25rem;
   height: 25rem;
-  border-radius: 15px;
+  
 }
 
 .textTwo {
