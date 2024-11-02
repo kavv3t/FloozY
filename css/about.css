@@ -4,8 +4,12 @@ body {
   font-family: "Afacad Flux", sans-serif;
 }
 
+main {
+  margin: 0;
+}
+
 .partie2 {
-  margin-top: 200px;
+  padding-top: 150px;
 }
 
 .partie3 {
@@ -23,6 +27,11 @@ body {
   justify-content: center;
 }
 
+.premiere {
+  border-bottom: solid 2px black;
+  padding-bottom: 100px;
+}
+
 .deuxieme {
   display: flex;
   justify-content: center;
@@ -30,15 +39,11 @@ body {
 }
 
 .innerFirst {
-  width: 700px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  border: solid 2px black;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 10px 10px rgb(115, 84, 255);
-  background-image: url('../images/otherTeam.webp');
+  justify-content: center;
+  align-items: center;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -47,15 +52,21 @@ body {
 .innerFirst > section {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: auto;
+  gap: 5rem;
 }
 
 h2 {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: black;
   height: 5%;
+  position: relative;
+  bottom: 3rem;
 }
 
 h2::after {
@@ -64,31 +75,47 @@ h2::after {
   color: rgb(115, 84, 255);
 }
 
+.innerFirst > section > p {
+  /*border: solid 3px rgb(115, 84, 255);*/
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(115, 84, 255);
+}
+
 .textOne {
   position: relative;
   left: 1.5rem;
-  width: 35%;
+  width: 18.75rem;
   height: auto;
   z-index: 1;
   font-size: 1.55rem;
   font-weight: 400;
-  text-shadow: 0px 0px 5px white;
+  /*border-right: solid 30px rgb(79, 57, 179);*/
+  text-align: end;
+  /*background-color: rgb(115, 84, 255);*/
 }
 
-.separation {
-  width: 30%;
+.imgFirst {
+  background-image: url('../images/Project_44-08.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 31.25rem;
+  height: 25rem;
+  border-radius: 15px;
 }
 
 .textTwo {
   position: relative;
   right: 1.5rem;
-  width: 35%;
+  width: 18.75rem;
   height: auto;
-  text-align: end;
   z-index: 1;
   font-size: 1.6rem;
   font-weight: 400;
-  text-shadow: 0px 0px 5px white;
+  /*background-color: rgb(255, 153, 0);*/
+  /*border-left: solid 30px rgb(79, 57, 179);*/
 }
 
 .innerSecond {
@@ -103,48 +130,55 @@ h2::after {
 
 .present {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 50px;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   margin-top: 100px;
 }
 
 .inPresent1 {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: row;
+  gap: 50px;
+  height: auto;
 }
 
-.pres1,
-.pres2 {
-  height: 400px;
-  width: 500px;
-}
-
-.pres1,
-.pres2 {
-  border: solid 2px black;
-  transform: translateX(-20%);
+.inPresent2 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px rgb(115, 84, 255);
+  border-bottom: solid 3px rgb(115, 84, 255);
+  padding-bottom: 3rem;
+  position: relative;
+  width: 80vw;
+  height: 900px;
+}
+
+.pres1,
+.pres2 {
+  width: 500px;
 }
 
 .pres3 {
-  border: solid 2px black;
-  transform: translateX(20%);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: -10px 10px rgb(115, 84, 255);
-  height: 600px;
+  height: 100%;
   width: 500px;
 }
 
+.inPres3 {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 h3 > span {
@@ -155,36 +189,27 @@ h3 > span {
   text-decoration: underline;
 }
 
-.pres1 > p {
-  padding: 0px 30px;
-  font-size: 1.5rem;
-}
-
-.pres2 > p {
-  padding: 0px 30px;
-  font-size: 1.25rem;
-  position: relative;
-  bottom: 20px;
-}
-
 .pres3 > section > p {
-  padding: 0px 30px;
-  font-size: 1.25rem;
+  padding: 10px 30px;
+  font-size: 1.6rem;
   position: relative;
   bottom: 20px;
+  background-color: rgb(115, 84, 255);
+  border-radius: 10px;
+  color: white;
+  margin: 0px 20px;
 }
 
 .pres3 > section > p > span {
-  color: rgb(77, 36, 255);
   font-weight: 500;
   font-size: 1.5rem;
   text-decoration: underline;
 }
 
 .line {
-  position: absolute;
-  width: 4px;
-  height: 800px;
+  position: relative;
+  width: 70%;
+  height: 4px;
   background-color: rgb(115, 84, 255);
   border-radius: 10px;
 }
@@ -384,3 +409,93 @@ footer {
   }
 }
 
+/* font awesome */
+
+.service-item {
+  list-style: none;
+  border: solid 3px rgb(115, 84, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 80px;
+}
+
+.service-header > h5,i {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chevron {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+  color: #7353ff;
+}
+
+.over {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle-checkbox:checked + .service-header .chevron {
+  transform: rotate(90deg);
+}
+
+.toggle-checkbox:checked ~ .over {
+  max-height: 460px; 
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.description {
+  width:  100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 8rem;
+  padding-left: 8rem;
+  gap: 4rem;
+} 
+
+.services section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;  
+}
+
+.over > p {
+  font-family: "Afacad Flux", sans-serif;
+  font-style: normal;
+  font-size: 1.8rem;
+  height: auto;
+}
+
+.over {
+  height: auto;
+  margin: none;
+}
