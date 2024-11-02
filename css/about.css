@@ -378,14 +378,6 @@ footer {
     zoom: 1.2;
   }
 
-  .textOne {
-    left: 2rem;
-  }
-
-  .textTwo {
-    right: 2rem;
-  }
-
   .deuxieme {
     zoom: 1.2;
   }
@@ -413,7 +405,6 @@ footer {
 
 .service-item {
   list-style: none;
-  border: solid 3px rgb(115, 84, 255);
   border-radius: 10px;
   padding: 10px;
 }
@@ -425,6 +416,7 @@ footer {
 .service-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   height: 80px;
 }
@@ -493,6 +485,7 @@ footer {
   font-style: normal;
   font-size: 1.8rem;
   height: auto;
+  text-align: center;
 }
 
 .over {
