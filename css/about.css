@@ -150,7 +150,8 @@ h2::after {
 .inPres3 {
   margin-top: 1.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 1rem;
 }
 
