@@ -1,36 +1,13 @@
-.present {
-  flex-direction: column;
-  gap: 80px;
-}
-
-.pres1,
-.pres2,
-.pres3 {
-  transform: translateX(0);
-}
-
-.pres3 {
-  box-shadow: 10px 10px rgb(115, 84, 255);
-}
-
-.line {
-  display: none;
-}
-
 .premiere {
-  zoom: 0.85;
+  zoom: 0.55;
 }
-
-/*.deuxieme {
-  zoom: 0.85;
-}*/
 
 .troisieme {
   zoom: 0.85;
 }
 
-.textOne {
-  font-size: 1.2rem;
+.inPresent1 {
+  flex-direction: column;
 }
 
 @media screen and (max-width: 500px) {

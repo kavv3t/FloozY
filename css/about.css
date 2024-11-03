@@ -41,7 +41,7 @@ main {
 
 .innerFirst {
   height: 100%;
-  width: 70%;
+  width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +130,7 @@ h2::after {
   padding-bottom: 3rem;
   position: relative;
   width: 80vw;
-  height: 900px;
+  height: auto;
 }
 
 .pres1,
@@ -143,16 +143,21 @@ h2::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: auto;
   width: 500px;
 }
 
 .inPres3 {
   margin-top: 1.5rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 1rem;
+}
+
+.paraPres1,
+.paraPres2 {
+  display: flex;
+  flex-direction: row;
 }
 
 h3 {
@@ -163,11 +168,11 @@ h3 > span {
   color: rgb(115, 84, 255);
 }
 
-.pres3 > h3 > span {
+.pres3 > section > h3 > span {
   text-decoration: underline;
 }
 
-.pres3 > section > p {
+.pres3 > section > section > p {
   padding: 10px 30px;
   font-size: 1.6rem;
   position: relative;
@@ -176,9 +181,10 @@ h3 > span {
   border-radius: 10px;
   color: white;
   margin: 0px 20px;
+  width: 300px;
 }
 
-.pres3 > section > p > span {
+.pres3 > section > section > p > span {
   font-weight: 500;
   font-size: 1.5rem;
   text-decoration: underline;
@@ -270,8 +276,8 @@ footer {
     height: 400px;
   }*/
 
-  .innerSecond {
-    width: 700px;
+  .premiere {
+    zoom: 0.8;
   }
 
   .present {
@@ -280,45 +286,8 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-  .innerFirst {
-    width: 500px;
-  }
-
-  .innerFirst > section {
-    font-size: 0.95rem;
-  }
-
-  h2 {
-    height: 3%;
-  }
-  
-  .textOne {
-    left: 1rem;
-    font-size: 1.2rem;
-  }
-  
-  .textTwo {
-    right: 1rem;
-    font-size: 1.25rem;
-  }
-  
-  .imgOne {
-    background-size: 90%;
-    width: 50%;
-  }
-
-  .premiere,
-  .troisieme {
-    height: 400px;
-  }
-
-  /*.deuxieme {
-    height: 300px;
-  }*/
-
-  .innerSecond {
-    width: 550px;
-    height: 350px;
+  .premiere {
+    zoom: 0.6;
   }
 
   .innerThird {
@@ -341,12 +310,10 @@ footer {
 
   .pres1,
   .pres2 {
-    transform: translateX(-12%);
     zoom: 1.10;
   }
 
   .pres3 {
-    transform: translateX(12%);
     zoom: 1.10;
   }
 }
